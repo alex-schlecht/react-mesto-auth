@@ -68,9 +68,6 @@ const App = () => {
     }
   }, []);
 
-  useBeforeUnload(() => {
-    localStorage.removeItem('jwt');
-  }) 
   const handleRegister = (email, password) => {
     register(email, password)
       .then((res) => {
